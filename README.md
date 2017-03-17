@@ -28,12 +28,12 @@ define a method inside a constructor function. So how should we get behavior in
 Remember `wonderWoman`?
 
 ```js
-let wonderWoman = {
+const wonderWoman = {
   name: 'Diana Prince',
   alias: 'Wonder Woman',
 
   usePower: function() {
-    return 'Deflects bullets with bracelets';
+    return 'Deflects bullets with bracelets'
   }
 }
 ```
@@ -42,10 +42,10 @@ We made a nice `Hero` constructor to take care of the attributes .
 
 ```js
 const Hero = function(name, alias, power) {
-  this.name = name;
-  this.alias = alias;
-  this._power = power;
-};
+  this.name = name
+  this.alias = alias
+  this._power = power
+}
 ```
 
 ## Code along:  add methods to prototypes
